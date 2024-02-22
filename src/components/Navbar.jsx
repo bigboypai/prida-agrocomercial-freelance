@@ -7,13 +7,13 @@ const Navbar = ({ isOpen, openNavBar }) => {
     return (
         <div className="navbar-container">
             <div className="navbar-logo"> PRIDA </div>
+            <div className='fake-div-for-grid'></div>
             <div className="navbar-links">
                 <li><a href="#">Quienes somos</a></li>
                 <li><a href="#">Visión</a></li>
                 <li><a href="#">Contactanos</a></li>
                 <li><a href="#">Misión</a></li>
             </div>
-            <div className='fake-div-for-grid'></div>
             <img onClick={() => openNavBar()} className='navbar-menu' src={menu}/>
             <div className={`side-menu ${isOpen ? 'open' : ''}`}>
                 <div className="menu-items">

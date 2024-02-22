@@ -7,10 +7,11 @@
     min-width: 100%;
     padding: 25px 0px;
 
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
     align-items: center;
-    justify-content: space-between;
-  
+    
     animation-name: fadeInDown;
     animation-duration: 1s;
 
@@ -23,9 +24,6 @@
     margin: 0px 50px;
 } */
 
-.fake-div-for-grid {
-    display: block;
-}
 
 .navbar-logo {
     font-size: 4rem;
@@ -39,7 +37,7 @@
     li {
         text-align: left;
         list-style-type: none;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     a {
@@ -73,9 +71,9 @@
         height: 2rem;
         display: block;
     }
-    .fake-div-for-grid {
+    /* .fake-div-for-grid {
         display: block;
-    }
+    } */
 
     .side-menu {
         position: fixed;

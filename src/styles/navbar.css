@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.navbar-container {
+    min-width: 100%;
+    padding: 25px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+
+    .navbar-logo, .navbar-menu, .navbar-links {
+        margin: 0 50px;
+    }
+}
+
+/* .navbar-container > * {
+    margin: 0px 50px;
+} */
+
+.fake-div-for-grid {
+    display: block;
+}
+
+.navbar-logo {
+    font-size: 4rem;
+    color: rgb(36, 36, 36);
+    font-weight: 700;
+}
+
+.navbar-links {
+    display: flex;
+
+    li {
+        text-align: left;
+        list-style-type: none;
+        font-size: 2.5rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(36, 36, 36);
+        transition: ease 300ms;
+    }
+    a:hover {
+        color: wheat;
+    }
+}
+.navbar-links > *:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.navbar-menu {
+    display: none;
+}
+.menu-items {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-logo {
+        font-size: 1.5rem;
+    }
+    .navbar-links {
+        display: none;
+    }
+    .navbar-menu {
+        height: 2rem;
+        display: block;
+    }
+    .fake-div-for-grid {
+        display: block;
+    }
+
+    .side-menu {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 250px;
+        height: 100%;
+        background-color: #333;
+        transition: right 0.3s ease;
+    }
+    
+    .side-menu.open {
+        right: 0;
+    }
+    
+    
+    .menu-items {
+        display: block;
+        margin-top: 50px;
+        padding: 20px;
+        color: #fff;
+        font-size: 1.2rem;
+    }
+    
+    .menu-items a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 0;
+    }
+    
+    .menu-items a:hover {
+        background-color: #555;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .navbar-links {
+        li {
+            font-size: 1.2rem;
+        }
+    }
+    .navbar-links > *:not(:last-child) {
+        margin-right: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+

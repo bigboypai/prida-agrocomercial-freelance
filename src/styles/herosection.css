@@ -12,16 +12,16 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 
-    padding-left: 50px;
+    padding-left: 100px;
 }
 
 .hero-content {
     color: whitesmoke;
 
     h1 {
-        font-size: 4rem;
+        font-size: 5rem;
         margin-bottom: 25px;
-        max-width: 700px;
+        max-width: 800px;
         font-weight: 700;
     }
 

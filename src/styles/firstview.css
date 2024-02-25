@@ -6,7 +6,9 @@
 
 .firstview-container {
     height: 100vh;
-    background-color: rgb(211, 211, 211);
+    background-image: url('https://us.images.westend61.de/0000742102pw/vegetable-and-lettuce-fields-SIEF007104.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     display: grid;
     grid-template-rows: auto 1fr;
 }

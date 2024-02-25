@@ -5,7 +5,7 @@ import Hero from '../components/Hero'
 
 import '../styles/firstview.css'
 
-const firstView = () => {
+const firstView = ( { scrollIntoView } ) => {
   const [isOpen, setIsOpen] = useState(false)
 
   const openNavBar = () => {
@@ -20,7 +20,7 @@ const firstView = () => {
 
   return (
     <div onClick={closeNavBar} className='firstview-container'>
-        <Navbar isOpen={isOpen} openNavBar={openNavBar}/>
+        <Navbar scrollIntoView={ scrollIntoView } isOpen={isOpen} openNavBar={openNavBar}/>
         <div className='hero-center'>
             <Hero />
         </div>

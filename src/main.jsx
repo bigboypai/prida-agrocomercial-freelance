@@ -21,9 +21,9 @@ const App = () => {
   return (
     <div>
       <FirstView scrollIntoView={scrollToView} />
-      {/* <SecondView scrollIntoViewcrollIntoView={scrollToView} viewRefs={viewRefs} />
+      <SecondView scrollIntoViewcrollIntoView={scrollToView} viewRefs={viewRefs} />
       <ThirdView scrollIntoViewcrollIntoView={scrollToView} viewRefs={viewRefs}/>
-      <FourthView scrollIntoViewcrollIntoView={scrollToView} viewRefs={viewRefs}/>  */}
+      <FourthView scrollIntoViewcrollIntoView={scrollToView} viewRefs={viewRefs}/> 
     </div>
   )
 }

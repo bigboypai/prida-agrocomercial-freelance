@@ -1,4 +1,63 @@
 .thirdview-container {
     height: 100vh;
     background-color: rgb(207, 207, 207);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    h2 {
+        font-size: 4rem;
+        margin-bottom: 25px;
+    }
+    p {
+        text-align: justify;
+        font-size: 2rem;
+        max-width: 75%;
+
+    }
+}
+
+.thirdview-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+}
+
+@media screen and (max-width: 767px) {
+    .thirdview-container {
+        flex-direction: column;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 1.5rem;
+            max-width: 375px;
+            color: rgb(93, 93, 93);
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .thirdview-container {
+        flex-direction: column;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 1.5rem;
+            max-width: 375px;
+            color: rgb(93, 93, 93);
+        }
+    }
 }

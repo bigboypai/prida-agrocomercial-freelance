@@ -1,4 +1,53 @@
 .fourth-view-container {
     height: 100vh;
     background-color: rgb(126, 126, 126);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.social-media-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.prov-wa {
+    text-align: center;
+
+    h3 {
+        font-size: 3rem;
+        max-width: 500px;
+        margin-bottom: 50px;
+    }
+
+    button {
+        padding: 25px 75px;
+        background-color: rgb(192, 192, 192);
+        color: white;
+        font-size: 1.2rem;
+
+        border: none;
+        cursor: pointer;
+        transition: ease-in 300ms;
+    }
+    button:hover {
+        background-color: aquamarine;
+    }
+}
+
+.fourth-view-container div {
+    justify-self: center;
+    align-self: center;
+}
+
+@media screen and (max-width: 767px) {
+    .fourth-view-container {
+        h3 {
+            max-width: 400px;
+            text-align: center;
+            font-size: 2rem;
+        }
+    }
 }

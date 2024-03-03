@@ -1,5 +1,5 @@
 import '../styles/navbar.css'
-import menu from '../assets/open-menu.png'
+import menu from '../../public/menu.svg'
 
 const Navbar = ({ isOpen, openNavBar, scrollIntoView }) => {
 

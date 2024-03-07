@@ -10,7 +10,17 @@ const App = () => {
 
   const scrollToView = (index) => {
     if (viewRefs[index] && viewRefs[index].current) {
-      viewRefs[index].current.scrollIntoView({ behavior: 'smooth' });
+      const options = {
+        behavior: 'smooth',
+      };
+      // Check if the scroll action is triggered by a user click
+      if ('scrollBehavior' in document.documentElement.style) {
+        // Smooth scrolling is supported
+        viewRefs[index].current.scrollIntoView(options);
+      } else {
+        // Smooth scrolling not supported, fallback to instant scrolling
+        viewRefs[index].current.scrollIntoView();
+      }
     }
   };
 

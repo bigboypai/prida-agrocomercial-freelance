@@ -11,9 +11,7 @@ const thirdView = ({ viewRefs }) => {
 
         <div>
           <h2> Nuestra visión </h2>
-          <p>
-          Nuestra visión es ser una empresa agrícola productiva e innovadora que expande su línea de productos más allá de las fronteras, con el objetivo de ofrecer calidad y frescura inigualables a nuestros clientes.
-          </p>
+          <p> Nuestra visión es ser una empresa agrícola productiva e innovadora que expande su línea de productos más allá de las fronteras, con el objetivo de ofrecer calidad y frescura inigualables a nuestros clientes. </p>
         </div>
     </div>
   )

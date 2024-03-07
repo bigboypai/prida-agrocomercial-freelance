@@ -1,6 +1,8 @@
 import '../styles/navbar.css'
 import menu from '../../public/menu.svg'
+// import Logo from '../assets/logo.jpeg'
 
+// eslint-disable-next-line react/prop-types
 const Navbar = ({ isOpen, openNavBar, scrollIntoView }) => {
 
     return (

@@ -1,7 +1,6 @@
 .fourth-view-container {
     height: 100vh;
-    background-color: rgb(126, 126, 126);
-
+    background-color: rgb(44, 44, 44);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -20,20 +19,22 @@
         font-size: 3rem;
         max-width: 500px;
         margin-bottom: 50px;
+        color: white;
     }
 
     button {
         padding: 25px 75px;
-        background-color: rgb(192, 192, 192);
-        color: white;
+        background-color: yellow;
+        color: black;
         font-size: 1.2rem;
+        border-radius: 10px;
 
         border: none;
         cursor: pointer;
         transition: ease-in 300ms;
     }
     button:hover {
-        background-color: aquamarine;
+        background-color: rgb(158, 158, 0);
     }
 }
 
@@ -50,4 +51,7 @@
             font-size: 2rem;
         }
     }
+}
+body {
+    background-color: rgb(44, 44, 44);
 }

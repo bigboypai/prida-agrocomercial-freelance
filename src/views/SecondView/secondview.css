@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.secondview-container {
+    height: 100vh;
+    background-color: #2c2c2c; /* Adjusted background color to a darker shade */
+    color: #ffffff; /* Changed text color to white */
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.secondview-container > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center-align text content */
+}
+
+.secondview-container > :nth-child(3) {
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px; /* Added margin-bottom for separation */
+}
+
+p {
+    text-align: justify;
+    font-size: 2rem;
+    max-width: 60%; /* Increased max-width for better readability */
+    line-height: 1.5; /* Improved line height for better spacing */
+}
+
+h2 {
+    font-size: 3rem; /* Slightly reduced font size */
+    color: #ffffff; /* Changed text color to white */
+    margin-top: 20px; /* Added margin-top for separation */
+}
+
+@media only screen and (max-width: 767px) {
+    .secondview-container {
+        padding: 0 20px; /* Added padding for better spacing on smaller screens */
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        max-width: 75%;
+    }
+
+    h2 {
+        display: none; /* Hide h2 on smaller screens */
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+        max-width: 70%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}

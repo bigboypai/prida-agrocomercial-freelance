@@ -1,0 +1,55 @@
+.fourth-view-container {
+    height: 100vh;
+    background-color: #2c2c2c; /* Darkened background color for a modern look */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    color: white;
+}
+
+.social-media-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.prov-wa {
+    text-align: center;
+}
+
+.prov-wa h3 {
+    font-size: 3rem;
+    max-width: 500px;
+    margin-bottom: 30px; /* Reduced margin bottom for better spacing */
+    color: white;
+}
+
+.prov-wa button {
+    padding: 15px 30px; /* Reduced padding for a more modern look */
+    background-color: #ffd700; /* Changed button background color to gold */
+    color: black;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Added transition effect for smoother hover */
+}
+
+.prov-wa button:hover {
+    background-color: #9e9e00; /* Darker gold color on hover */
+}
+
+@media screen and (max-width: 767px) {
+    .prov-wa h3 {
+        max-width: 90%; /* Adjusted max-width for better responsiveness on smaller screens */
+        font-size: 2rem; /* Reduced font size for smaller screens */
+    }
+}
+
+/* Ensuring consistent background color for the body */
+body {
+    background-color: #2c2c2c; /* Darkened background color for a modern look */
+}

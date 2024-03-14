@@ -2,24 +2,26 @@ import '../styles/navbar.css'
 import menu from '../../public/menu.svg'
 // import Logo from '../assets/logo.jpeg'
 
+import { Link } from "react-router-dom";
+
 // eslint-disable-next-line react/prop-types
-const Navbar = ({ isOpen, openNavBar, scrollIntoView }) => {
+const Navbar = ({ isOpen, openNavBar }) => {
 
     return (
         <div className="navbar-container">
             <div className="navbar-logo"> PRIDA </div>
             <div className='fake-div-for-grid'></div>
             <div className="navbar-links">
-                <li><a onClick={() => scrollIntoView(1)}>Quienes somos</a></li>
-                <li><a onClick={() => scrollIntoView(2)}>Misión/visión</a></li>
-                <li><a onClick={() => scrollIntoView(3)}>Contactanos</a></li>
+                <li><Link to="quienessomos">Quienes somos</Link></li>
+                <li><Link to="misionyvision">Misión/visión</Link></li>
+                <li><Link to="contacto">Contactanos</Link></li>
             </div>
             <img onClick={() => openNavBar()} className='navbar-menu' src={menu}/>
             <div className={`side-menu ${isOpen ? 'open' : ''}`}>
                 <div className="menu-items">
-                    <a onClick={() => scrollIntoView(1)}>Quienes somos</a>
-                    <a onClick={() => scrollIntoView(2)}>Misión y visión</a>
-                    <a onClick={() => scrollIntoView(3)}>Contactanos</a>
+                    <a>Quienes somos</a>
+                    <a>Misión y visión</a>
+                    <a>Contactanos</a>
                 </div>
             </div>
         </div>

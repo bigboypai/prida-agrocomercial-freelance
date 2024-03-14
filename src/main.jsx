@@ -1,45 +1,37 @@
-import React, { useRef } from 'react'
+/* eslint-disable no-unused-vars */
+import React from 'react'
 import ReactDOM from 'react-dom/client'
-import FirstView from './views/firstView'
-import SecondView from './views/secondView'
-import ThirdView from './views/thirdView'
-import FourthView from './views/fourthView'
+import FirstView from './views/FirstView/firstView'
+import SecondView from './views/SecondView/SecondView'
+import ThirdView from './views/ThirdView/ThirdView'
+import FourthView from './views/FourthView/FourthView'
 
-const App = () => {
-  const viewRefs = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
-  const scrollToView = (index) => {
-    if (viewRefs[index] && viewRefs[index].current) {
-      const options = {
-        behavior: 'smooth',
-      };
-      // Check if the scroll action is triggered by a user click
-      if ('scrollBehavior' in document.documentElement.style) {
-        // Smooth scrolling is supported
-        viewRefs[index].current.scrollIntoView(options);
-      } else {
-        // Smooth scrolling not supported, fallback to instant scrolling
-        viewRefs[index].current.scrollIntoView();
-      }
-    }
-  };
-
-  const scrollToFirstView = () => {
-    scrollToView(0, 'smooth');
-  };
-
-  return (
-    <div>
-      <FirstView scrollIntoView={scrollToView} />
-      <SecondView scrollIntoViewcrollIntoView={scrollToView} viewRefs={viewRefs} />
-      <ThirdView scrollIntoViewcrollIntoView={scrollToView} viewRefs={viewRefs}/>
-      <FourthView scrollIntoViewcrollIntoView={scrollToView} viewRefs={viewRefs}/> 
-    </div>
-  )
-}
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <FirstView />,
+  },
+  {
+    path: "/quienessomos",
+    element: <SecondView />,
+  },
+  {
+    path: "/misionyvision",
+    element: <ThirdView />,
+  },
+  {
+    path: "/contacto",
+    element: <FourthView />,
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    < App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )

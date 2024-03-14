@@ -11,7 +11,6 @@
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-
     padding-left: 100px;
 }
 
@@ -33,12 +32,20 @@
     }
 
     button {
-        padding: 25px 50px;
-        background-color:yellow;
+        padding: 15px 30px; /* Reduced padding for a more modern look */
+        background-color: #ffdb58; /* Changed button background color to gold */
         color: black;
         border: none;
         border-radius: 5px;
-        font-size: 30px;
+        font-size: 1.5rem; /* Adjusted button font size */
+        cursor: pointer; /* Added pointer cursor for better UX */
+        transition: background-color 0.3s ease; /* Added transition effect for smoother hover */
+
+        text-decoration: none;
+    }
+
+    button:hover {
+        background-color: #ffd700; /* Lighter gold color on hover */
     }
 }
 
@@ -54,14 +61,15 @@
             font-size: 1.2rem;
         }
         button {
-            padding: 15px 25px;
-            font-size: 1rem;
+            padding: 10px 20px; /* Reduced padding for smaller screens */
+            font-size: 1rem; /* Reduced font size for smaller screens */
         }
     }
     .hero-fake-div {
         display: none;
     }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .hero-content {
         h1 {

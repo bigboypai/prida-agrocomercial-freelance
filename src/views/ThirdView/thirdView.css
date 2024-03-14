@@ -1,0 +1,63 @@
+.thirdview-container {
+    height: 100vh;
+    background-image: url('../assets/campo.jpeg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.thirdview-container h2 {
+    font-size: 3.5rem; /* Adjusted font size for a modern look */
+    margin-bottom: 20px; /* Reduced margin bottom for better spacing */
+}
+
+.thirdview-container p {
+    text-align: justify;
+    font-size: 1.8rem; /* Adjusted font size for better readability */
+    max-width: 50%; /* Adjusted max-width for better responsiveness */
+}
+
+.thirdview-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    align-self: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .thirdview-container {
+        flex-direction: column;
+
+        h2 {
+            font-size: 2rem; /* Adjusted font size for smaller screens */
+            margin-bottom: 20px; /* Reduced margin bottom for better spacing */
+        }
+
+        p {
+            font-size: 1.2rem; /* Adjusted font size for smaller screens */
+            max-width: 75%; /* Adjusted max-width for better responsiveness */
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .thirdview-container {
+        flex-direction: column;
+
+        h2 {
+            font-size: 2.5rem; /* Adjusted font size for medium screens */
+            margin-bottom: 15px; /* Reduced margin bottom for better spacing */
+        }
+
+        p {
+            font-size: 1.4rem; /* Adjusted font size for medium screens */
+            max-width: 375px; /* Adjusted max-width for better responsiveness */
+        }
+    }
+}

@@ -4,27 +4,21 @@
     margin: 0;
     font-family: "Alegreya", serif;
 }
+
 .navbar-container {
     min-width: 100%;
     padding: 25px 0px;
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     align-items: center;
-    
     animation-name: fadeInDown;
     animation-duration: 1s;
-
-    .navbar-logo, .navbar-menu, .navbar-links {
-        margin: 0 50px;
-    }
 }
 
-/* .navbar-container > * {
+.navbar-container > * {
     margin: 0px 50px;
-} */
-
+}
 
 .navbar-logo {
     font-size: 4rem;
@@ -35,29 +29,29 @@
 .navbar-links {
     display: flex;
     cursor: pointer;
-
-    li {
-        text-align: left;
-        list-style-type: none;
-        font-size: 1.5rem;
-    }
-
-    a {
-        text-decoration: none;
-        color: rgb(36, 36, 36);
-        transition: ease 300ms;
-    }
-    a:hover {
-        color: yellow;
-    }
 }
-.navbar-links > *:not(:last-child) {
+
+.navbar-links li {
+    text-align: left;
+    list-style-type: none;
+    font-size: 1.5rem;
     margin-right: 2rem;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+    transition: ease 300ms;
+}
+
+.navbar-links a:hover {
+    color: yellow;
 }
 
 .navbar-menu {
     display: none;
 }
+
 .menu-items {
     display: none;
 }
@@ -73,10 +67,6 @@
         height: 2rem;
         display: block;
     }
-    /* .fake-div-for-grid {
-        display: block;
-    } */
-
     .side-menu {
         position: fixed;
         top: 0;
@@ -91,7 +81,6 @@
         right: 0;
     }
     
-    
     .menu-items {
         display: block;
         margin-top: 50px;
@@ -100,7 +89,7 @@
         font-size: 1.2rem;
     }
     
-    .menu-items a {
+    .menu-items Link {
         display: block;
         color: #fff;
         text-decoration: none;
@@ -114,21 +103,11 @@
 
 @keyframes fadeInDown {
     from {
-      opacity: 0;
-      transform: translateY(-20px);
+        opacity: 0;
+        transform: translateY(-20px);
     }
     to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .navbar-links {
-        li {
-            font-size: 1.2rem;
-        }
-    }
-    .navbar-links > *:not(:last-child) {
-        margin-right: 1rem;
+        opacity: 1;
+        transform: translateY(0);
     }
 }
